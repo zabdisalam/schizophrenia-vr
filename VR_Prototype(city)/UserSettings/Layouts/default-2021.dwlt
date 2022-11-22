@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Project
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 84
+  controlID: 58
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 200
     height: 947
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 83
+  controlID: 67
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -475,22 +475,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/POLYGON city pack/scene
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/POLYGON city pack/scene
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Games\unity\schizophrenia-vr\VR_Prototype(city)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 00670000
-    m_LastClickedID: 26368
-    m_ExpandedIDs: 00000000006700000c6700001a670000482c020000ca9a3b
+    m_SelectedIDs: c2650000
+    m_LastClickedID: 26050
+    m_ExpandedIDs: 00000000226500002c65000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -518,7 +518,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000000670000
+    m_ExpandedIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -891,9 +891,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -291.49, y: 70.11449, z: 16.971855}
+    m_Target: {x: -289.09003, y: 70.28165, z: 14.098207}
     speed: 2
-    m_Value: {x: -291.49, y: 70.11449, z: 16.971855}
+    m_Value: {x: -289.09003, y: 70.28165, z: 14.098207}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -940,13 +940,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.26001438, y: 0.6371438, z: -0.24224502, w: 0.68394005}
+    m_Target: {x: 0.006413687, y: 0.72426206, z: -0.0067489333, w: 0.68948025}
     speed: 2
-    m_Value: {x: 0.26001227, y: 0.6371386, z: -0.24224305, w: 0.6839345}
+    m_Value: {x: 0.006413607, y: 0.724253, z: -0.006748849, w: 0.6894716}
   m_Size:
-    m_Target: 0.75
+    m_Target: 5.680814
     speed: 2
-    m_Value: 0.75
+    m_Value: 5.680814
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1001,10 +1001,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 92247}
-      m_SelectedIDs: 96770600
-      m_LastClickedID: 423830
-      m_ExpandedIDs: 1446f4ff6848f4ff6a48f4ff2e49f4fff649f4ff1838f6ff0a28f8ffee1cfaff4e1ffaff8a1ffaff8c1ffaff2412fcffb812fcff4e04feffd4f9ffff2efbfffffc290100c03901006046010008700200aa960200527506001c850600bc910600
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: f218faff96a0faff5408fcffd4f7fdff2209feff5c92feff1afaffff2efbffff64a800000cab00004e5f0b00
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: SimpleTeleportTarget_circle_3
@@ -1015,7 +1015,7 @@ MonoBehaviour:
           y: 0
           width: 0
           height: 0
-        m_UserData: 425896
+        m_UserData: -129064
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
