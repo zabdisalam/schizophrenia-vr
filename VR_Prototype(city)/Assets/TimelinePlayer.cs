@@ -8,14 +8,9 @@ public class TimelinePlayer : MonoBehaviour
 
     private PlayableDirector director;
     public GameObject controlPanel;
-    // public GameObject playerObj = null;
-    // private GameObject pedestrian = null;
-    // private TeleportController teleportController;
 
     void Awake()
     {
-        // pedestrian = GameObject.Find("Pedestrian");
-        // playerObj = GameObject.Find("XR Origin");
         director = GetComponent<PlayableDirector>();
         director.played += Director_Played;
         director.stopped += Director_Stopped;
