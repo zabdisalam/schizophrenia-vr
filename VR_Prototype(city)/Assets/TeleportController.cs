@@ -9,7 +9,7 @@ public class TeleportController : MonoBehaviour
     public GameObject baseControllerGameObject;
     public GameObject teleportationGameObject;
 
-    static private bool hasTeleported = false;
+    public bool hasTeleported = false;
     public GameObject playerObj = null;
     public GameObject teleportReticle = null;
 
@@ -18,12 +18,18 @@ public class TeleportController : MonoBehaviour
     public UnityEvent onTeleportActivate;
     public UnityEvent onTeleportCancel;
 
+    private TimelinePlayer pedestrianTimeLine;
+    private GameObject pedestrian = null;
+
     private void Start()
     {
         if (playerObj == null)
         {
             playerObj = GameObject.Find("XR Origin");
             teleportReticle = GameObject.Find("SimpleTeleportTarget_circle_3");
+            pedestrian = GameObject.Find("Pedestrian");
+            pedestrian.SetActive(false);
+
         }
         teleportActivationReference.action.performed += TeleportModeActivate;
         teleportActivationReference.action.canceled += TeleportModeCancel;
@@ -36,6 +42,8 @@ public class TeleportController : MonoBehaviour
         {
             teleportReticle.SetActive(false);
             hasTeleported = true;
+            pedestrian.SetActive(true);
+            pedestrianTimeLine.StartTimeline();
         }
     }
 
@@ -44,7 +52,6 @@ public class TeleportController : MonoBehaviour
         if (!hasTeleported)
             onTeleportActivate.Invoke();
     }
-
     private void TeleportModeCancel(InputAction.CallbackContext obj) => Invoke("DeactivateTeleporter", .1f);
 
     void DeactivateTeleporter() => onTeleportCancel.Invoke();
