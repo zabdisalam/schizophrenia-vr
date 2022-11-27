@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 2122
+  controlID: 2508
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,10 +176,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 92375}
+      scrollPos: {x: 0, y: 92455}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2efbffff5ca80000b6b80000
+      m_ExpandedIDs: ccf9ffff1cfbfffffc76000042ab00002abb00009cbb0000e2c70000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 2123
+  controlID: 2509
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -481,9 +481,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -290.8428, y: 69.67636, z: 18.07193}
+    m_Target: {x: -283.96048, y: 73.24566, z: 18.738863}
     speed: 2
-    m_Value: {x: -290.8428, y: 69.67636, z: 18.07193}
+    m_Value: {x: -283.96048, y: 73.24566, z: 18.738863}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -530,13 +530,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.19115588, y: 0.5022235, z: -0.11506757, w: -0.83551645}
+    m_Target: {x: 0.14252579, y: 0.39737618, z: -0.06262188, w: 0.9043777}
     speed: 2
-    m_Value: {x: -0.19114658, y: 0.50219905, z: -0.115061976, w: -0.8354758}
+    m_Value: {x: 0.1425228, y: 0.39736784, z: -0.062620565, w: 0.90435874}
   m_Size:
-    m_Target: 1.4578549
+    m_Target: 5.4704146
     speed: 2
-    m_Value: 1.4578549
+    m_Value: 5.4704146
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TimelineWindow
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -665,12 +665,12 @@ MonoBehaviour:
     height: 334
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 10}
   - {fileID: 11}
   - {fileID: 12}
-  m_Selected: 2
+  m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -721,14 +721,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/POLYGON city pack/scene
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Games\unity\schizophrenia-vr\VR_Prototype(city)
+  m_LastProjectPath: C:\Users\samlb\Documents\UNITY\schizophrenia-vr\VR_Prototype(city)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: d4e40000
-    m_LastClickedID: 58580
-    m_ExpandedIDs: 00000000d0e40000d2e40000d4e4000000ca9a3bffffff7f
+    m_SelectedIDs: 60670000
+    m_LastClickedID: 26464
+    m_ExpandedIDs: 000000005a6700005c6700005e67000060670000626700006467000066670000686700006a6700006c6700006e67000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -756,7 +756,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d0e40000d2e40000d4e4000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000005a6700005c6700005e67000060670000626700006467000066670000686700006a6700006c6700006e67000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -781,9 +781,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 38750000
-    m_LastClickedInstanceID: 30008
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 20680000
+    m_LastClickedInstanceID: 26656
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000c6e5000020d500002cd50000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -875,7 +875,7 @@ MonoBehaviour:
     m_IsLocked: 0
   m_SequenceHierarchy: {fileID: 0}
   m_SequencePath:
-    m_SelectionRoot: 30008
+    m_SelectionRoot: 0
     m_SubElements: []
 --- !u!114 &13
 MonoBehaviour:
@@ -896,8 +896,8 @@ MonoBehaviour:
     y: 0
     width: 520
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -937,7 +937,7 @@ MonoBehaviour:
     m_CachedPref: 355
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 30008
+  m_LastInspectedObjectInstanceID: 37012
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
