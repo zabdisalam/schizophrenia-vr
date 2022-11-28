@@ -36,8 +36,8 @@ public class TeleportController : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " +
-         playerObj.transform.position.z);
+        // Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " +
+        //  playerObj.transform.position.z);
         if ((playerObj.transform.position.x >= -290.4 && -288.4 >= playerObj.transform.position.x) && (playerObj.transform.position.y >= 68.86 && 70.86 >= playerObj.transform.position.y))
         {
             teleportReticle.SetActive(false);
