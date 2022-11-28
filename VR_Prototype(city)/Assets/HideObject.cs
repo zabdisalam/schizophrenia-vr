@@ -12,8 +12,8 @@ public class HideObject : MonoBehaviour
     }
 
     void Update(){
-        
-        if (playerObj.transform.position.x <= 45){
+        Debug.Log(playerObj.transform.position.x);
+        if (playerObj.transform.position.x <= -58){
             canvas.SetActive(true);
         }
         
