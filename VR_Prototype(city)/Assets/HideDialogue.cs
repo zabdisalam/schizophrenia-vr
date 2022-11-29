@@ -13,7 +13,6 @@ public class HideDialogue : MonoBehaviour
     }
 
     void Update(){
-        // Debug.Log(playerObj.transform.position.x);
         if ((playerObj.transform.position.x <= -287) && (alreadyDone == false)){
             StartCoroutine(waiter());
             alreadyDone = true;
