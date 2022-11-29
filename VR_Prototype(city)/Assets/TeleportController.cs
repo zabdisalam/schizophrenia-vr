@@ -19,12 +19,14 @@ public class TeleportController : MonoBehaviour
     public UnityEvent onTeleportCancel;
 
     private TimelinePlayer pedestrianTimeLine;
-    private GameObject pedestrian = null;
+    private GameObject pedestrian;
 
     private void Start()
     {
         if (playerObj == null)
         {
+            pedestrianTimeLine = GameObject.Find("Timeline").GetComponent<TimelinePlayer>();
+
             playerObj = GameObject.Find("XR Origin");
             teleportReticle = GameObject.Find("SimpleTeleportTarget_circle_3");
             pedestrian = GameObject.Find("Pedestrian");
@@ -38,7 +40,8 @@ public class TeleportController : MonoBehaviour
     {
         // Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " +
         //  playerObj.transform.position.z);
-        if ((playerObj.transform.position.x >= -290.4 && -288.4 >= playerObj.transform.position.x) && (playerObj.transform.position.y >= 68.86 && 70.86 >= playerObj.transform.position.y))
+
+        if ((playerObj.transform.position.x >= -290.4 && -288.4 >= playerObj.transform.position.x) && (playerObj.transform.position.y >= 68.86 && 70.86 >= playerObj.transform.position.y) && !hasTeleported)
         {
             teleportReticle.SetActive(false);
             hasTeleported = true;
@@ -49,7 +52,7 @@ public class TeleportController : MonoBehaviour
 
     private void TeleportModeActivate(InputAction.CallbackContext obj)
     {
-        if (!hasTeleported)
+        if (!hasTeleported || !pedestrian.activeSelf)
             onTeleportActivate.Invoke();
     }
     private void TeleportModeCancel(InputAction.CallbackContext obj) => Invoke("DeactivateTeleporter", .1f);
