@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class TeleportRunGuide : MonoBehaviour
 {
-    public GameObject[] runGuides;
+    public GameObject runGuides;
 
     private TeleportController teleportController;
     public GameObject playerObj = null;
     public GameObject pedestrian = null;
 
-    private int runGuideCounter = 0;
+    // private int runGuideCounter = 0;
 
     void Start()
     {
@@ -19,16 +19,9 @@ public class TeleportRunGuide : MonoBehaviour
 
     void Update()
     {
-        if ((teleportController.hasTeleported && !pedestrian.activeSelf && runGuideCounter < 6) || (runGuideCounter > 0 && runGuideCounter < 6))
+        if (teleportController.hasTeleported && !pedestrian.activeSelf)
         {
-            runGuides[runGuideCounter].SetActive(true);
-
-            if ((int)playerObj.transform.position.x == (int)runGuides[runGuideCounter].transform.position.x
-                && (int)playerObj.transform.position.y == (int)runGuides[runGuideCounter].transform.position.y)
-            {
-                runGuides[runGuideCounter].SetActive(false);
-                runGuideCounter += 1;
-            }
+            runGuides.SetActive(true);
         }
     }
 }
