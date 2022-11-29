@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/POLYGON city pack/scene/DemoScene.unity
     guid: 0944cef3d0b00374db7ec3bbb6298d2a
+  - enabled: 1
+    path: Assets/POLYGON city pack/scene/Finale.unity
+    guid: fb3eaa078c9bf9c43a085b32748ba0cd
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 790e93e611071014db33626ed634929b, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1075534e7a9a3b9449f2eca052025ea7, type: 2}

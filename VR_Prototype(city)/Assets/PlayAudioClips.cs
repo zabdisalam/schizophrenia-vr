@@ -10,10 +10,12 @@ public class PlayAudioClips : MonoBehaviour
     public AudioClip clip;
     public GameObject canvas;
     public GameObject pedestrian;
+    public GameObject cube;
 
     public void playButton(){
         audio.PlayOneShot(clip);
         canvas.transform.localScale = new Vector3(0, 0, 0);
+        cube.SetActive(true);
         StartCoroutine(waiter());
     }
 

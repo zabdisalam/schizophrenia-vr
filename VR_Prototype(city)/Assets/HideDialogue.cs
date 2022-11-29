@@ -7,9 +7,11 @@ public class HideDialogue : MonoBehaviour
     public GameObject canvas;
     public GameObject playerObj;
     public bool alreadyDone = false;
+    public GameObject cube;
 
     void Start(){
         canvas.SetActive(false);
+        cube.SetActive(false);
     }
 
     void Update(){
