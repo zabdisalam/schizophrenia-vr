@@ -6,7 +6,7 @@ using UnityEngine.Playables;
 public class PlayAudioClips : MonoBehaviour
 {
 
-    public AudioSource audio;
+    public new AudioSource audio;
     public AudioClip clip;
     public GameObject canvas;
     public GameObject pedestrian;

@@ -7,25 +7,19 @@ public class TeleportRunGuide : MonoBehaviour
     public GameObject[] runGuides;
 
     private TeleportController teleportController;
-    private GameObject playerObj = null;
-    private GameObject pedestrian = null;
+    public GameObject playerObj = null;
+    public GameObject pedestrian = null;
 
     private int runGuideCounter = 0;
 
     void Start()
     {
-        if (playerObj == null)
-        {
-            teleportController = GameObject.Find("RightHand").GetComponent<TeleportController>();
-            playerObj = GameObject.Find("XR Origin");
-            pedestrian = GameObject.Find("Remy (1)");
-        }
+        teleportController = GameObject.Find("RightHand").GetComponent<TeleportController>();
     }
 
     void Update()
     {
-        Debug.Log("hasTeleported: " +teleportController.hasTeleported + "\nPedestrian is Activated: " + pedestrian.activeSelf);
-        if (teleportController.hasTeleported && !pedestrian.activeSelf && runGuideCounter <= 6)
+        if ((teleportController.hasTeleported && !pedestrian.activeSelf && runGuideCounter < 6) || (runGuideCounter > 0 && runGuideCounter < 6))
         {
             runGuides[runGuideCounter].SetActive(true);
 

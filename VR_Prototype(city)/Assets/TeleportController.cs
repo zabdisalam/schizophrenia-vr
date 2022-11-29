@@ -12,6 +12,7 @@ public class TeleportController : MonoBehaviour
     public bool hasTeleported = false;
     public GameObject playerObj = null;
     public GameObject teleportReticle = null;
+    public GameObject remy;
 
     public InputActionReference teleportActivationReference;
     [Space]
@@ -20,6 +21,7 @@ public class TeleportController : MonoBehaviour
 
     private TimelinePlayer pedestrianTimeLine;
     private GameObject pedestrian;
+
 
     private void Start()
     {
@@ -38,10 +40,8 @@ public class TeleportController : MonoBehaviour
     }
     private void Update()
     {
-        // Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " +
-        //  playerObj.transform.position.z);
-
-        if ((playerObj.transform.position.x >= -290.4 && -288.4 >= playerObj.transform.position.x) && (playerObj.transform.position.y >= 68.86 && 70.86 >= playerObj.transform.position.y) && !hasTeleported)
+        if (((int)playerObj.transform.position.x == (int)teleportReticle.transform.position.x)
+            && ((int)playerObj.transform.position.y == (int)teleportReticle.transform.position.y) && !hasTeleported)
         {
             teleportReticle.SetActive(false);
             hasTeleported = true;
@@ -52,7 +52,7 @@ public class TeleportController : MonoBehaviour
 
     private void TeleportModeActivate(InputAction.CallbackContext obj)
     {
-        if (!hasTeleported || !pedestrian.activeSelf)
+        if (!hasTeleported || !remy.activeSelf)
             onTeleportActivate.Invoke();
     }
     private void TeleportModeCancel(InputAction.CallbackContext obj) => Invoke("DeactivateTeleporter", .1f);
