@@ -8,6 +8,7 @@ public class TimelinePlayer : MonoBehaviour
 
     private PlayableDirector director;
     public GameObject controlPanel;
+    public bool isTimelineDone = false;
 
     void Awake()
     {
@@ -15,7 +16,10 @@ public class TimelinePlayer : MonoBehaviour
         director.played += Director_Played;
         director.stopped += Director_Stopped;
     }
-
+    void Update() {
+        if(director.duration - director.time < 0.2)
+            isTimelineDone = true;
+    }
     private void Director_Played(PlayableDirector obj)
     {
         controlPanel.SetActive(false);
@@ -29,5 +33,6 @@ public class TimelinePlayer : MonoBehaviour
     public void StartTimeline()
     {
         director.Play();
+
     }
 }
