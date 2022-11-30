@@ -9,6 +9,7 @@ public class CheckPedestrianGone : MonoBehaviour
     public GameObject pedestrian;
     public GameObject playerObj;
     public GameObject endReticle;
+    public GameObject XROrigin;
     public AudioClip clip;
     public new AudioSource audio;
     public GameObject cube;
@@ -34,6 +35,7 @@ public class CheckPedestrianGone : MonoBehaviour
     {
         RenderSettings.fog = true;
         yield return new WaitForSeconds(64.73f);
+        XROrigin.SetActive(false);
         SceneManager.LoadScene("Finale");
     }
 }
