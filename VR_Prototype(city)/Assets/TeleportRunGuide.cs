@@ -5,7 +5,7 @@ using UnityEngine;
 public class TeleportRunGuide : MonoBehaviour
 {
     public GameObject runGuides;
-
+    public GameObject endReticle;
     private TeleportController teleportController;
     public GameObject playerObj = null;
     public GameObject pedestrian = null;
@@ -22,6 +22,7 @@ public class TeleportRunGuide : MonoBehaviour
         if (teleportController.hasTeleported && !pedestrian.activeSelf)
         {
             runGuides.SetActive(true);
+            endReticle.SetActive(true);
         }
     }
 }

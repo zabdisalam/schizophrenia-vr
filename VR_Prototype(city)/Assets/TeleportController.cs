@@ -41,7 +41,8 @@ public class TeleportController : MonoBehaviour
     private void Update()
     {
         if (((int)playerObj.transform.position.x == (int)teleportReticle.transform.position.x)
-            && ((int)playerObj.transform.position.y == (int)teleportReticle.transform.position.y) && !hasTeleported)
+            && ((int)playerObj.transform.position.y == (int)teleportReticle.transform.position.y)
+            && ((int)playerObj.transform.position.z == (int)teleportReticle.transform.position.z) && !hasTeleported)
         {
             teleportReticle.SetActive(false);
             hasTeleported = true;

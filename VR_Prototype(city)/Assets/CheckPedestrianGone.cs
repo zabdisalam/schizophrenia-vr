@@ -7,7 +7,6 @@ public class CheckPedestrianGone : MonoBehaviour
 {
 
     public GameObject pedestrian;
-    public GameObject playerObj;
     public GameObject endReticle;
     public GameObject XROrigin;
     public AudioClip clip;
@@ -18,18 +17,20 @@ public class CheckPedestrianGone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if ((int)XROrigin.transform.position.x == (int)endReticle.transform.position.x
+            && (int)XROrigin.transform.position.y == (int)endReticle.transform.position.y 
+            && (int)XROrigin.transform.position.z == (int)endReticle.transform.position.z)
+        {
+            XROrigin.SetActive(false);
+            SceneManager.LoadScene("Finale");
+        }
         if (!pedestrian.activeInHierarchy && cube.activeInHierarchy && !alreadyDone)
         {
             audio.PlayOneShot(clip);
             StartCoroutine(waiter());
             alreadyDone = true;
         }
-        if (playerObj.transform.position.x == endReticle.transform.position.x
-            && playerObj.transform.position.y == endReticle.transform.position.y)
-        {
-            playerObj.SetActive(false);
-            SceneManager.LoadScene("Finale");
-        }
+        
     }
     IEnumerator waiter()
     {

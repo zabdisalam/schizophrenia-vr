@@ -31,21 +31,25 @@ public class DialogueBox : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
+    {
         source.PlayOneShot(clip);
 
         DateTimeOffset now = DateTimeOffset.UtcNow;
         long unixTimeMilliseconds = now.ToUnixTimeMilliseconds();
 
-        while((((DateTimeOffset.UtcNow).ToUnixTimeMilliseconds()) - unixTimeMilliseconds) < (800/(1.0f / Time.deltaTime))){
+        while ((((DateTimeOffset.UtcNow).ToUnixTimeMilliseconds()) - unixTimeMilliseconds) < (800 / (1.0f / Time.deltaTime)))
+        {
             //do nothing
         }
-        
+
         Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " +
          playerObj.transform.position.z);
 
-        if ((playerObj.transform.position.x >= -290.4 && -288.4 >= playerObj.transform.position.x) && (playerObj.transform.position.y >= 68.86 && 70.86 >= playerObj.transform.position.y))
-        {  
+
+        if (((int)playerObj.transform.position.x == (int)teleportReticle.transform.position.x)
+           && ((int)playerObj.transform.position.y == (int)teleportReticle.transform.position.y)
+           && ((int)playerObj.transform.position.z == (int)teleportReticle.transform.position.z))
+        {
             // DateTimeOffset now = DateTimeOffset.UtcNow;
             // long unixTimeMilliseconds = now.ToUnixTimeMilliseconds();
 
