@@ -4,8 +4,6 @@
 
 An immersive virtual reality experience meant to simulate a schizophrenic episode – the trigger and the episode itself. The experience follows a person living with schizophrenia as they engage with a pedestrian, where an episode is triggered. The user is then guided through the episode, where they experience both visual and audtiory hallucinations.
 
-The virtual reality experience was created by Zakaria Abdisalam and Samuel Braun. The experience was made using Unity 2021.3.11f1, alongside programming done by Zakaria and Samuel (in C#).
-
 ## Brief Description of Schizophrenia
 
 Schizophrenia is a chronic mental disorder often stigmatized due some of its symptoms, such as: drastic personality changes, irregular motor behavior, and disorganized speech. This experience's goal is to facilitate the learning and understanding of people with schizophrenia using VR, where the user can immerse themselves in a situation where people living with schizophrenia are discriminated against.
