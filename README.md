@@ -14,15 +14,15 @@ Schizophrenia is a chronic mental disorder often stigmatized due some of its sym
 
 ## Credits
 
-Developers: Zakaria Abdisalam and Samuel Braun (Students at uOttawa)
-Storyline Development: Annika Whitwam, Maria Khalil, Zakaria Abdisalam, Junyuan Qi, and Samuel Braun
-User Voice: Samuel Braun
-Pedestrian Voice: Zacryn Madison (Professional Voice Actor)
+Developers: Zakaria Abdisalam and Samuel Braun (Students at uOttawa)<br />
+Storyline Development: Annika Whitwam, Maria Khalil, Zakaria Abdisalam, Junyuan Qi, and Samuel Braun<br />
+User Voice: Samuel Braun<br />
+Pedestrian Voice: Zacryn Madison (Professional Voice Actor)<br />
 
 ## Resources Used
 
-Development Environment/Engine: Unity 2021.3.11f1
-Programming Language: C# (when extra programming was needed for customization within Unity)
+Development Environment/Engine: Unity 2021.3.11f1<br />
+Programming Language: C# (when extra programming was needed for customization within Unity)<br />
 
 ## Sources
 
