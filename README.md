@@ -14,7 +14,8 @@ Schizophrenia is a chronic mental disorder often stigmatized due some of its sym
 
 ## Credits
 
-Developers: Zakaria Abdisalam and Samuel Braun (Students at uOttawa)<br />
+Developers: Zakaria Abdisalam and Samuel Braun<br />
+Technical Help: Noah Do Régo
 Storyline Development: Annika Whitwam, Maria Khalil, Zakaria Abdisalam, Junyuan Qi, and Samuel Braun<br />
 User Voice: Samuel Braun<br />
 Pedestrian Voice: Zacryn Madison (Professional Voice Actor)<br />
